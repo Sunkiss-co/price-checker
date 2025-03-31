@@ -3,7 +3,6 @@ import { motion } from "framer-motion";
 
 function App() {
   const [data, setData] = useState([]);
-  const [selectedMaker, setSelectedMaker] = useState("長州産業");
   const [selectedModel, setSelectedModel] = useState("");
   const [price, setPrice] = useState("");
 
@@ -45,11 +44,7 @@ function App() {
         <div className="space-y-4">
           <div>
             <label className="block mb-1 text-sm">メーカー</label>
-            <select
-              value={selectedMaker}
-              disabled
-              className="w-full border rounded p-2"
-            >
+            <select disabled className="w-full border rounded p-2">
               <option value="長州産業">長州産業</option>
             </select>
           </div>
